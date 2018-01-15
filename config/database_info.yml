@@ -1,0 +1,10 @@
+---
+in_database_host: 127.0.0.1
+in_database_user: root
+in_database_pass: root
+in_database_dbname: jleague
+
+out_database_host: 127.0.0.1
+out_database_user: root
+out_database_pass: root
+out_database_dbname: Titanic
