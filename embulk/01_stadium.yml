@@ -1,0 +1,23 @@
+---
+in:
+  type: mysql
+  host: ${in_database_host}
+  user: ${in_database_user}
+  password: ${in_database_pass}
+  database: ${in_database_dbname}
+  default_timezone: Asia/Tokyo
+  charset: UTF-8
+  query: |
+    SELECT *
+    FROM stadium
+    WHERE capa > 40000
+
+out:
+  type: mysql
+  host: ${out_database_host}
+  user: ${out_database_user}
+  password: ${out_database_pass}
+  database: ${out_database_dbname}
+  default_timezone: Asia/Tokyo
+  table: new_stadiums
+  mode: insert_direct

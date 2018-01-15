@@ -1,7 +1,10 @@
 timezone: UTC
 
-+setup:
-  echo>: start ${in_database_dbname}
++start:
+  echo>: "start"
 
-+teardown:
-  echo>: finish ${out_database_dbname}
++stadium:
+  embulk>: embulk/01_stadium.yml
+
++finish:
+  echo>: "finish"
